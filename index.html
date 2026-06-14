@@ -6,20 +6,33 @@
     <title>Simple Flashcards – Vocabulary Learning App</title>
     <meta
       name="description"
-      content="A simple, free, offline flashcard app for vocabulary learning. No ads, no account required."
+      content="Paste words and instantly create flashcards with auto-filled meanings. Free, offline, no ads, and no account required."
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="app-icon.png" type="image/png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Simple Flashcards – Vocabulary Learning App" />
+    <meta property="og:description" content="Paste words and instantly create flashcards with auto-filled meanings. Free, offline, no ads, and no account required." />
+    <meta property="og:image" content="app-icon.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Simple Flashcards – Vocabulary Learning App" />
+    <meta property="twitter:description" content="Paste words and instantly create flashcards with auto-filled meanings. Free, offline, no ads, and no account required." />
+    <meta property="twitter:image" content="app-icon.png" />
   </head>
   <body>
     <header>
       <div class="container">
-        <a href="index.html" class="site-title"
+        <a href="index.html" class="site-title" id="nav-brand"
           ><img src="app-icon-header.webp" alt="" class="nav-icon" />Simple
           Flashcards</a
         >
         <nav>
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms.html">Terms</a>
+          <a href="privacy-policy.html" id="nav-privacy">Privacy Policy</a>
+          <a href="terms.html" id="nav-terms">Terms</a>
         </nav>
       </div>
     </header>
@@ -31,18 +44,19 @@
           <h1>Simple Flashcards</h1>
           <p class="tagline">No Ads &bull; No Login &bull; Just Study</p>
           <p class="description">
-            A simple flashcard app for vocabulary learning.
+            Paste words. Auto-fill meanings. Start studying in seconds.
           </p>
         </div>
 
         <div class="card features">
           <h2 class="card-title">Features</h2>
           <ul>
-            <li>Create custom flashcard sets</li>
-            <li>Import starter vocabulary packs</li>
-            <li>Built-in dictionaries</li>
+            <li>Paste word lists and auto-fill meanings</li>
+            <li>Create custom flashcard sets quickly</li>
+            <li>Built-in English-Vietnamese and English-English dictionaries</li>
             <li>Text-to-speech pronunciation</li>
-            <li>Offline learning</li>
+            <li>Import starter vocabulary packs</li>
+            <li>Study offline</li>
             <li>No account required</li>
             <li>No advertisements</li>
           </ul>
@@ -51,15 +65,16 @@
         <div class="card links-section">
           <h2 class="card-title">Links</h2>
           <div class="link-list">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
+            <a href="privacy-policy.html" id="link-privacy">Privacy Policy</a>
+            <a href="terms.html" id="link-terms">Terms of Service</a>
             <a
               href="https://github.com/skypediacode"
               target="_blank"
               rel="noopener"
+              id="link-github"
               >GitHub Profile</a
             >
-            <a href="mailto:skypediacode@gmail.com">Contact</a>
+            <a href="mailto:skypediacode@gmail.com" id="link-contact">Contact</a>
           </div>
         </div>
 

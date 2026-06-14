@@ -147,7 +147,7 @@ nav a:hover {
 .hero .description {
   font-size: 1rem;
   color: var(--text-muted);
-  max-width: 380px;
+  max-width: 420px;
   margin: 0 auto;
 }
 
