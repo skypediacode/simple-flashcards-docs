@@ -45,7 +45,7 @@ a:hover {
 /* ── Layout ──────────────────────────────────────────── */
 
 .container {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
@@ -151,6 +151,56 @@ nav a:hover {
   margin: 0 auto;
 }
 
+/* ── Store badges ────────────────────────────────────── */
+
+.store-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.store-badge-link {
+  display: inline-block;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.store-badge-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.88;
+  text-decoration: none;
+}
+
+.store-badge {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+.store-badge-coming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.store-badge-coming .store-badge {
+  opacity: 0.38;
+  filter: grayscale(20%);
+}
+
+.store-badge-soon {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
 /* ── Cards ───────────────────────────────────────────── */
 
 .card {
@@ -176,7 +226,7 @@ nav a:hover {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 28px;
+  gap: 10px 32px;
 }
 
 .features ul li {
